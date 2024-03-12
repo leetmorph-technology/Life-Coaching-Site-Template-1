@@ -15,7 +15,7 @@ export default function Header() {
                     height: { sx: "8rem" },
                     width: { sx: "100%" },
                 }}>
-                    <img src={logoOfPage} alt="Logo of the Sample Page" sx={{ height: "100%", width: "100%" }} />
+                    <img src={logoOfPage} alt="Logo of the Sample Page" sx={{ height: "auto", width: "100%" }} />
                 </Box>
             </Container>
             <Navigation />

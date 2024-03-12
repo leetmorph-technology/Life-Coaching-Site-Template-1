@@ -105,16 +105,20 @@ function Slider() {
                                             alt={step.label}
                                         />
                                     ) : null}
-                                    <Typography sx={{
+                                    <Box sx={{
+                                        background: "rgba(0, 0, 0, 0.6)",
+                                        width: "100%",
                                         position: "absolute",
                                         bottom: "0",
-                                        color: "#fff",
-                                        fontSize: "2.4rem",
-                                        padding: "0px 10px",
-                                        background: "rgba(0, 0, 0, 0.6)",
-                                        width: "100%"
-
-                                    }}>{step.label}</Typography>
+                                    }}>
+                                        <Container maxWidth="xl">
+                                            <Typography sx={{
+                                                padding: "0px 20px",
+                                                color: "#fff",
+                                                fontSize: "2.4rem",
+                                            }}>{step.label}</Typography>
+                                        </Container>
+                                    </Box>
                                 </div>
                             ))}
                         </AutoPlaySwipeableViews>

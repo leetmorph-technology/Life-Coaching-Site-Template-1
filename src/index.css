@@ -7,3 +7,31 @@ body {
     background: #FFFFFF;
     font-family: 'Abel', sans-serif;
 }
+
+table {
+    margin: 20px 20px 40px 20px;
+    font-size: inhereit;
+    border-collapse: collapse;
+    color: #655B55;
+}
+
+tr:nth-child(odd) {
+    background: #fff;
+}
+
+tr:nth-child(even) {
+    background: #f8f7f3;
+}
+
+td, th {
+    padding: 8px;
+    border: 1px dotted #ccc;
+    text-align: center;
+}
+
+th {
+    color: #fff;
+    border: 1px solid #ccc;
+    background: #a8b1be;
+    border-color: white;
+}

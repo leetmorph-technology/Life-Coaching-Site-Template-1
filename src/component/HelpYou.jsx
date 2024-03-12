@@ -89,7 +89,6 @@ export default function HelpYou() {
 
             <h2 style={{
                     fontSize: "1.6em",
-                    fontWeight: "400",
                     color: "#345e65",
                     padding: "10px 20px",
                     fontWeight: "600",
