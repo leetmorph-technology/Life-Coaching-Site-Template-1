@@ -313,7 +313,7 @@ export default function Header() {
                                     fontSize: "clamp(1rem, 3vw, 3rem)"
                                 }}
                             >
-                                <Link
+                                <NavLink
                                     spy={true}
                                     smooth={true}
                                     offset={0}
@@ -327,8 +327,8 @@ export default function Header() {
                                     to="/"
                                 >
                                     Home
-                                </Link>
-                                <Link
+                                </NavLink>
+                                <NavLink
                                     spy={true}
                                     smooth={true}
                                     offset={0}
@@ -342,8 +342,8 @@ export default function Header() {
                                     to="/about"
                                 >
                                     About Leetmorph
-                                </Link>
-                                <Link
+                                </NavLink>
+                                <NavLink
                                     spy={true}
                                     smooth={true}
                                     offset={0}
@@ -357,8 +357,8 @@ export default function Header() {
                                     to="/process"
                                 >
                                     Process
-                                </Link>
-                                <Link
+                                </NavLink>
+                                <NavLink
                                     spy={true}
                                     smooth={true}
                                     offset={0}
@@ -372,8 +372,8 @@ export default function Header() {
                                     to="/resources"
                                 >
                                     Resources
-                                </Link>
-                                <Link
+                                </NavLink>
+                                <NavLink
                                     spy={true}
                                     smooth={true}
                                     offset={0}
@@ -387,8 +387,8 @@ export default function Header() {
                                     to="/faq"
                                 >
                                     FAQs
-                                </Link>
-                                <Link
+                                </NavLink>
+                                <NavLink
                                     spy={true}
                                     smooth={true}
                                     offset={50}
@@ -402,8 +402,8 @@ export default function Header() {
                                     to="/testimonials"
                                 >
                                     Testimonials
-                                </Link>
-                                <Link
+                                </NavLink>
+                                <NavLink
                                     spy={true}
                                     smooth={true}
                                     offset={0}
@@ -417,7 +417,7 @@ export default function Header() {
                                     to="/contact"
                                 >
                                     Contact
-                                </Link>
+                                </NavLink>
                             </Box>
                             <Divider />
                         </Drawer>
