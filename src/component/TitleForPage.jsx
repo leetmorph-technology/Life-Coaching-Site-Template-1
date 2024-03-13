@@ -1,10 +1,11 @@
 import { Box, Container, Typography } from "@mui/material";
+import TitleBackground from "../images/title-bg.jpg"
 
 export default function TitleForPage({ text }) {
     return (
         <Box sx={{
             padding: "25px 0",
-            background: "url(/src/images/title-bg.jpg)",
+            background: `url(${TitleBackground})`,
         }}>
             <Container maxWidth="xl">
             <Typography
