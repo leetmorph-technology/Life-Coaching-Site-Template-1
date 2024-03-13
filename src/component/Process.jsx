@@ -2,6 +2,7 @@ import { Box, Button, Container, Typography } from "@mui/material";
 import TitleForPage from "./TitleForPage";
 import Paragraph from "./Paragraph";
 import CoachingModel from "../images/coaching-model.jpg"
+import NewsLetterBox from "./NewsletterBox";
 
 export default function Process() {
     const headingRule = {
@@ -19,7 +20,7 @@ export default function Process() {
         padding: "10px 20px"
     }
     const subscribeBox = {
-        width: "20%",
+        width: {xs:"100%",sm:"45%",md:"20%"},
         border: "1px solid #fff",
         color: "inherit",
         background: "#B6BDC7",
@@ -42,9 +43,10 @@ export default function Process() {
                 alignItems: "start",
                 gap: "2rem",
                 flexDirection: { xs: "column", sm: "row" },
+                marginBottom: {xs:"40px"}
             }}>
                 <Box sx={{
-                    width: "75%"
+                    width: {xs:"100%",sm:"65%",md:"75%"},
                 }}>
                     <Paragraph text="Ontology is “the study of being”; how we observe through our body, emotion, and language. Albert Einstein famously wrote, “We see the world not as it is, but as we are”. Our feelings the moments when we react, the words of regret, anger and blame: NO MORE reacting to each situation. Ontology gives the tools to merely “respond” and feel powerful within our truths. Ontological coaching is NOT a quick fix to short-term goals, but instead it is creating lasting solutions for living a powerful, sustainable life." />
                     <Paragraph text="With our own unique approach, we provide intuitive guidance, wisdom, and keen insight to my clients. We offer lightness, compassion, and commitment to the wellness of being. Through thoughtful, confidential, and safe conversations, we will observe what’s working in your life, and what is not; this awareness, We promise, will allow unrealized freedom in both professional and personal relationships. Together, in a safe, trusting space between us, We will guide you towards the experience of perpetual joy." />
@@ -124,31 +126,7 @@ export default function Process() {
                     </table>
 
                 </Box >
-                <Box sx={subscribeBox}>
-                    <h1 style={headingRuleSBox}>NEWSLETTER</h1>
-                    <Box sx={{
-                        border: "1px solid #fff",
-                        borderTop: "none",
-                    }}>
-                        <Paragraph text="Get my email updates and when I'm adding new content!" />
-                        <Button sx={{
-                            background: "#616c7a",
-                            width: "max-content",
-                            color: "#fff",
-                            fontWeight: "500",
-                            margin: " 20px",
-                            transition: "300ms all ease-in-out",
-                            px: "20px",
-                            '&:hover': {
-                                background: "#616c7aaa",
-                                color: "#fff"
-                            }
-                        }}
-                            href="/subscribe"
-                        >Click Here To Subscribe !</Button>
-
-                    </Box>
-                </Box>
+                <NewsLetterBox />
 
             </Container >
 

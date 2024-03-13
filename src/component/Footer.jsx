@@ -6,6 +6,28 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 
 export default function Footer() {
+    function Copyright(props) {
+        return (
+          <Typography variant="body2" color="inherit" align="center" {...props}>
+            {' © '}
+            <Link color="inherit" href="https://leetmorph.com/">
+              Leetmorph Technology
+            </Link>{' '}
+            {new Date().getFullYear()}
+            {' Leetmorph Technology Ontological Life Coach. All rights reserved.'}
+          </Typography>
+        );
+      }
+
+      const handleSubmit = (event) => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        console.log({
+          email: data.get('email'),
+          password: data.get('password'),
+        });
+      };
+
     return (
 
         <>
@@ -73,20 +95,21 @@ export default function Footer() {
                         gap:"1rem"
                     }}>
                         <Typography>
-                            © 2024 Leetmorph Technology Ontological Life Coach. All rights reserved.
+                            <Copyright />
                         </Typography>
                         <Box 
                         sx={{
                             display:"flex",
                             justifyContent:"center",
-                            alignItems:"center"
+                            alignItems:"center",
+                            flexDirection:{xs:"column",sm:"row"}
                         }}>
-                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/"><HomeIcon sx={{cursor:"pointer"}} /></Link>&nbsp;|&nbsp;
-                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/about">About</Link>&nbsp;|&nbsp;
-                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/process">Process</Link>&nbsp;|&nbsp;
-                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/testimonials">Testimonials</Link>&nbsp;|&nbsp;
-                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/faq">FAQs</Link>&nbsp;|&nbsp;
-                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/resources">Resources</Link>&nbsp;|&nbsp;
+                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/"><HomeIcon sx={{cursor:"pointer"}} /></Link>&nbsp;&nbsp;
+                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/about">About</Link>&nbsp;&nbsp;
+                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/process">Process</Link>&nbsp;&nbsp;
+                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/testimonials">Testimonials</Link>&nbsp;&nbsp;
+                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/faq">FAQs</Link>&nbsp;&nbsp;
+                            <Link sx={{color:"inherit", cursor:"pointer"}} href="/resources">Resources</Link>&nbsp;&nbsp;
                             <Link sx={{color:"inherit", cursor:"pointer"}} href="/contact">Contact</Link>
                         </Box>
                         <Box 

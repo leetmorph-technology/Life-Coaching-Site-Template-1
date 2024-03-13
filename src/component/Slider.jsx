@@ -86,14 +86,14 @@ function Slider() {
                                     style={{
                                         overflow: "hidden",
                                         position: "relative",
-                                        minHeight: "15rem"
+                                        // minHeight: "15rem"
                                     }}
                                 >
                                     {Math.abs(activeStep - index) <= 2 ? (
                                         <Box
                                             component="img"
                                             sx={{
-                                                height: "100%",
+                                                height: "auto",
                                                 width: "100%",
                                                 display: "block",
                                                 overflow: "hidden",
